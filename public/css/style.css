@@ -1,0 +1,230 @@
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('../font/FiraCode-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: Fira Code, sans-serif;
+}
+
+/* main */
+
+.navbar {
+    color: rgba(0, 0, 0, 0.788);
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.788);
+}
+
+.navbar ul li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.navbar ul li a{
+    color: rgba(0, 0, 0, 0.788);
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.178);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* view addUser */
+
+h1 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.788);
+    padding: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-control {
+    flex-direction: column;
+}
+
+.form-control label {
+    display: flex;
+    flex-direction: column; 
+    padding: 8px 8px 8px 5px;
+}
+
+.form-control input {
+    width: 250px;
+    height: 25px;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.418);
+    border-radius: 5px;
+}
+
+.form-control input::placeholder{
+    padding-left: 2px;
+}
+
+.form-control input:hover {
+    background-color:rgba(0, 0, 0, 0.096);
+}
+
+.form-box {
+    padding: 5px;
+    margin: 5px;
+}
+
+.bottom {
+    height: 37px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.418);
+    margin: 5px;
+}
+
+.bottom:hover {
+    background-color: rgba(0, 128, 0, 0.438);
+    cursor: pointer;
+}
+
+
+/* view home */
+
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.sub-container {
+    color: black;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px ;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+.item p {
+    margin: 1px;
+    padding: 1px;
+    width: 350px 
+}
+
+.user {
+    padding: 1px;
+    border: solid 1px rgba(0, 0, 0, 0.158);
+    margin: 5px;
+    padding: 10px;
+}
+
+.user a {
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+    color: black;
+}
+
+.user a:hover {
+    background-color: rgba(0, 0, 255, 0.192);
+    color : black;
+}
+
+.form-remove{
+    display: flex;
+}
+
+.bottom-container{
+    display: flex;
+    padding-left: -1px;
+}
+
+/* view edit */
+
+.bottom-editForm {
+    height: 37px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.418);
+    margin: 5px;
+}
+
+.bottom-editForm:hover {
+    background-color: rgba(255, 166, 0, 0.733);
+    cursor: pointer;
+}
+.button-edit {
+    height: 37px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.418);
+    margin: 5px;
+}
+
+.button-edit:hover {
+    background-color: rgba(255, 166, 0, 0.733);
+    cursor: pointer;
+}
+
+.button-edit a:hover{
+    text-decoration: none;
+}
+.button-edit {
+    height: 37px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.418);
+    margin: 5px;
+}
+
+.button-edit a:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.button-edit:hover {
+    background-color: rgba(255, 166, 0, 0.733);
+    cursor: pointer;
+}
+
+
+.bottom-remove {
+    height: 37px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.418);
+    margin: 5px;
+}
+
+.bottom-remove:hover {
+    background-color: rgba(255, 0, 0, 0.336);
+    cursor: pointer;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+}
+
+.address h2 {
+    color: rgba(0, 0, 0, 0.788);
+}
+
+/* view User */
+

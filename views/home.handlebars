@@ -1,0 +1,20 @@
+<h1>Usuários cadastrados: </h1>
+<div class="container">
+    <div class="sub-container">
+        {{#each users}}
+            <div class="item">
+                <div class="user">
+                    <p>Nome: {{this.name}}</p>
+                    <p>Profissao: {{this.occupation}}</p>
+                    <a href="/user/{{this.id}}">Ver detalhes</a>
+                    <form action="/user/remove/{{this.id}}" method="POST" class="form-remove">
+                        <div class="bottom-container">
+                            <input type="submit"  value="Remover" class="bottom-remove">
+                            <button class="button-edit"><a href="/edit/{{this.id}}" class="edit-link">Editar</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+

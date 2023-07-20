@@ -1,0 +1,45 @@
+<h1>Edite o usuario:</h1>
+<form action="/edit/update" method="POST" class="form">
+    <div class="form-control">
+        <input type="hidden" name="id" value="{{user.id}}">
+        <label for="name">Nome: </label>
+        <input type="text" name="name" placeholder="Digite o nome do usuário" value="{{user.name}}">
+    </div>
+    <div class="form-control">
+        <label for="ocuppation">Cargo: </label>
+        <input type="text" name="occupation" placeholder="Digite a profissao" value="{{user.occupation}}">
+    </div>
+    <div class="form-box">
+        {{#if users.newsletter}}
+            <input type="checkbox" name="newsletter" checked>
+        {{else }}
+            <input type="checkbox" name="newsletter">
+        {{/if}}
+        <label for="newsletter">Enviar promocao?</label>
+    </div>
+    <input type="submit" value="Editar" class="bottom-editForm">
+</form>
+<div class="address-container">
+    <form action="/address/create" method="POST" class="form">
+    <input type="hidden" name="id" id="" value="{{user.id}}">  
+        <div class="form-control">
+            <label for="street">Endereco: </label>
+            <input type="text" name="street" placeholder="Digite o endereco ">
+        </div>
+        <div class="form-control">
+            <label for="number">Número: </label>
+            <input type="number" name="number" placeholder="Digite o numero ">
+        </div>
+        <div class="form-control">
+            <label for="city">Cidade: </label>
+            <input type="text" name="city" placeholder="Digite a cidade ">
+        </div>
+        <input type="submit" value="Incluir endereco" class="bottom">
+    </form>
+    <div class="address">
+        <h2>Enderecos:</h2>
+        {{#each user.addresses}}
+        <p>{{this.street}}, {{this.number}}, {{this.city}}</p>
+        {{/each}}
+    </div>
+</div>
